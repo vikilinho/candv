@@ -3,6 +3,8 @@
 import 'dart:ui';
 
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:candv/utils.dart';
+import 'package:candv/views/gallery.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -16,11 +18,6 @@ class MobilePage extends StatefulWidget {
 }
 
 class _MobilePageState extends State<MobilePage> {
-  final Widget candv = SvgPicture.asset(
-    'images/Ellipse.svg',
-    semanticsLabel: 'cv',
-    height: 50,
-  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +43,10 @@ class _MobilePageState extends State<MobilePage> {
                 color: Colors.red,
               ),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Gallery()),
+                );
               },
             ),
             ListTile(
@@ -172,13 +172,30 @@ class _MobilePageState extends State<MobilePage> {
                 SizedBox(
                   width: 10.0,
                 ),
-                Text("Agbada Nenwe, Aniri LGA. Enuga",
+                Text("Agbada Nenwe, Aniri LGA. Enugu State",
                     style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * 0.02,
                       fontStyle: FontStyle.italic,
                     )),
               ]),
-            )
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            AspectRatio(
+              aspectRatio: 1,
+              child: SizedBox(
+                width: double.infinity,
+                child: GridView.builder(
+                  itemCount: 6,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  itemBuilder: (context, index) {
+                    return MyBox();
+                  },
+                ),
+              ),
+            ),
           ],
         ),
       ),
