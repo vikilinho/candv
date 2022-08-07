@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:candv/utils.dart';
@@ -15,97 +15,99 @@ class _TabletPageState extends State<TabletPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(
-                child: Card(
-                  elevation: 5.0,
-                  child: Container(
-                    height: MediaQuery.of(context).size.height * 0.1,
-                    decoration: BoxDecoration(color: Colors.white),
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Wrap(children: [
-                            Text("Chigozie"),
-                            Icon(Icons.favorite, color: Colors.red),
-                            Text("Victor"),
-                          ]),
-                          TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                'Gallery',
-                                style: TextStyle(
-                                    color: Color.fromARGB(255, 51, 46, 4)),
-                              )),
-                          TextButton(
-                              onPressed: () {}, child: Text('Direction')),
-                        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Card(
+                    elevation: 5.0,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                      decoration: BoxDecoration(color: Colors.white),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Wrap(children: [
+                              Text("Chigozie"),
+                              Icon(Icons.favorite, color: Colors.red),
+                              Text("Victor"),
+                            ]),
+                            TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  'Gallery',
+                                  style: TextStyle(
+                                      color: Color.fromARGB(255, 51, 46, 4)),
+                                )),
+                            TextButton(
+                                onPressed: () {}, child: Text('Direction')),
+                          ],
+                        ),
                       ),
                     ),
                   ),
-                ),
-              )
-            ],
-          ),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.1,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: AnimatedTextKit(
-                  animatedTexts: [
-                    FadeAnimatedText(
-                      textStyle: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height * 0.04,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.pink,
+                )
+              ],
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.1,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      FadeAnimatedText(
+                        textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.pink,
+                        ),
+                        'Chigozie',
                       ),
-                      'Chigozie',
-                    ),
-                    FadeAnimatedText(
-                        textStyle: TextStyle(
-                          fontSize: MediaQuery.of(context).size.height * 0.04,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red,
-                        ),
-                        '&'),
-                    FadeAnimatedText(
-                        textStyle: TextStyle(
-                          fontSize: MediaQuery.of(context).size.height * 0.04,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.blue,
-                        ),
-                        'Chigozie & Victor'),
-                  ],
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
+                          ),
+                          '&'),
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
+                          'Chigozie & Victor'),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-          Row(
-            children: [
-              Container(
-                height: MediaQuery.of(context).size.height * 0.4,
-                width: MediaQuery.of(context).size.width * 0.99,
-                margin: EdgeInsets.all(50.0),
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("images/c&v.png"),
-                        fit: BoxFit.cover), //change image fill type
-                    shape: BoxShape.circle),
-              ),
-              Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: AnimatedTextKit(
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Flexible(
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.4,
+                    width: MediaQuery.of(context).size.width * 0.4,
+                    margin: EdgeInsets.all(50.0),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("images/c&v.png"),
+                            fit: BoxFit.cover), //change image fill type
+                        shape: BoxShape.circle),
+                  ),
+                ),
+                Column(
+                  children: [
+                    AnimatedTextKit(
                       animatedTexts: [
                         TypewriterAnimatedText(
                             speed: Duration(milliseconds: 30),
@@ -117,13 +119,10 @@ class _TabletPageState extends State<TabletPage> {
                             'You are highly invited to celebrate our wedding.'),
                       ],
                     ),
-                  ),
-                  SizedBox(
-                    height: 12.0,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    child: AnimatedTextKit(
+                    SizedBox(
+                      height: 12.0,
+                    ),
+                    AnimatedTextKit(
                       animatedTexts: [
                         TypewriterAnimatedText(
                           speed: Duration(milliseconds: 60),
@@ -136,14 +135,10 @@ class _TabletPageState extends State<TabletPage> {
                         ),
                       ],
                     ),
-                  ),
-                  SizedBox(
-                    height: 12.0,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    // ignore: prefer_const_literals_to_create_immutables
-                    child: Wrap(children: [
+                    SizedBox(
+                      height: 12.0,
+                    ),
+                    Wrap(children: [
                       Text(
                         "Address:",
                         style: TextStyle(
@@ -160,18 +155,15 @@ class _TabletPageState extends State<TabletPage> {
                             fontStyle: FontStyle.italic,
                           )),
                     ]),
-                  ),
-                ],
-              )
-            ],
-          ),
-          SizedBox(
-            height: 12.0,
-          ),
-          Expanded(
-            flex: 2,
-            child: AspectRatio(
-              aspectRatio: 8,
+                  ],
+                )
+              ],
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            AspectRatio(
+              aspectRatio: 4,
               child: SizedBox(
                 width: double.infinity,
                 child: GridView(
@@ -190,8 +182,8 @@ class _TabletPageState extends State<TabletPage> {
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
