@@ -99,6 +99,65 @@ class _TabletPageState extends State<TabletPage> {
                   shape: BoxShape.circle),
             ),
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: AnimatedTextKit(
+              animatedTexts: [
+                TypewriterAnimatedText(
+                    speed: Duration(milliseconds: 30),
+                    textStyle: TextStyle(
+                      fontSize: MediaQuery.of(context).size.height * 0.03,
+                      fontStyle: FontStyle.italic,
+                    ),
+                    'You are highly invited to celebrate our wedding.'),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 12.0,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: AnimatedTextKit(
+              animatedTexts: [
+                TypewriterAnimatedText(
+                  speed: Duration(milliseconds: 60),
+                  textStyle: TextStyle(
+                      fontSize: MediaQuery.of(context).size.height * 0.03,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red),
+                  "Saturday, September 3, 2022, 2PM",
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 12.0,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            // ignore: prefer_const_literals_to_create_immutables
+            child: Wrap(children: [
+              Text(
+                "Address:",
+                style: TextStyle(
+                  fontSize: MediaQuery.of(context).size.height * 0.02,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(
+                width: 10.0,
+              ),
+              Text("Agbada Nenwe, Aniri LGA. Enugu State",
+                  style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.height * 0.02,
+                    fontStyle: FontStyle.italic,
+                  )),
+            ]),
+          ),
+          SizedBox(
+            height: 12.0,
+          ),
         ],
       ),
     );
