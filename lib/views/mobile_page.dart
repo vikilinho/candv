@@ -28,6 +28,20 @@ class _MobilePageState extends State<MobilePage> {
                 const Text("Victor"),
               ],
             )),
+            ListTile(
+              title: const Text('Gallery'),
+              leading: const Icon(Icons.photo_library),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Direction'),
+              leading: const Icon(Icons.directions),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
