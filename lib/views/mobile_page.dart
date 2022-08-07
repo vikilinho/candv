@@ -13,8 +13,26 @@ class _MobilePageState extends State<MobilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: Column(
+          children: [
+            DrawerHeader(
+                child: Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                const Text('Chigozie'),
+                const Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                ),
+                const Text("Victor"),
+              ],
+            )),
+          ],
+        ),
+      ),
       appBar: AppBar(
-        title: const Text('Mobile Page'),
+        title: const Text('C&V'),
       ),
       body: const Center(
         child: Text('Mobile'),
