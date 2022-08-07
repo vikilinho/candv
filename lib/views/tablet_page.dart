@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
 class TabletPage extends StatefulWidget {
@@ -50,7 +51,54 @@ class _TabletPageState extends State<TabletPage> {
                 ),
               )
             ],
-          )
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.1,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    FadeAnimatedText(
+                      textStyle: TextStyle(
+                        fontSize: MediaQuery.of(context).size.height * 0.04,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.pink,
+                      ),
+                      'Chigozie',
+                    ),
+                    FadeAnimatedText(
+                        textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red,
+                        ),
+                        '&'),
+                    FadeAnimatedText(
+                        textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                        'Chigozie & Victor'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          Expanded(
+            child: Container(
+              margin: EdgeInsets.all(50.0),
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("images/c&v.png"),
+                      fit: BoxFit.cover), //change image fill type
+                  shape: BoxShape.circle),
+            ),
+          ),
         ],
       ),
     );
