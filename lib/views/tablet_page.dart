@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:candv/utils.dart';
 import 'package:flutter/material.dart';
 
 class TabletPage extends StatefulWidget {
@@ -22,7 +23,6 @@ class _TabletPageState extends State<TabletPage> {
                 child: Card(
                   elevation: 5.0,
                   child: Container(
-                    width: MediaQuery.of(context).size.height * 0.99,
                     height: MediaQuery.of(context).size.height * 0.1,
                     decoration: BoxDecoration(color: Colors.white),
                     child: Padding(
@@ -89,74 +89,107 @@ class _TabletPageState extends State<TabletPage> {
               ),
             ],
           ),
-          Expanded(
-            child: Container(
-              margin: EdgeInsets.all(50.0),
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("images/c&v.png"),
-                      fit: BoxFit.cover), //change image fill type
-                  shape: BoxShape.circle),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: AnimatedTextKit(
-              animatedTexts: [
-                TypewriterAnimatedText(
-                    speed: Duration(milliseconds: 30),
-                    textStyle: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.03,
-                      fontStyle: FontStyle.italic,
+          Row(
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.height * 0.4,
+                width: MediaQuery.of(context).size.width * 0.99,
+                margin: EdgeInsets.all(50.0),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("images/c&v.png"),
+                        fit: BoxFit.cover), //change image fill type
+                    shape: BoxShape.circle),
+              ),
+              Column(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        TypewriterAnimatedText(
+                            speed: Duration(milliseconds: 30),
+                            textStyle: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.03,
+                              fontStyle: FontStyle.italic,
+                            ),
+                            'You are highly invited to celebrate our wedding.'),
+                      ],
                     ),
-                    'You are highly invited to celebrate our wedding.'),
-              ],
-            ),
+                  ),
+                  SizedBox(
+                    height: 12.0,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        TypewriterAnimatedText(
+                          speed: Duration(milliseconds: 60),
+                          textStyle: TextStyle(
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.03,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red),
+                          "Saturday, September 3, 2022, 2PM",
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12.0,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    // ignore: prefer_const_literals_to_create_immutables
+                    child: Wrap(children: [
+                      Text(
+                        "Address:",
+                        style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.02,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text("Agbada Nenwe, Aniri LGA. Enugu State",
+                          style: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.02,
+                            fontStyle: FontStyle.italic,
+                          )),
+                    ]),
+                  ),
+                ],
+              )
+            ],
           ),
           SizedBox(
             height: 12.0,
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: AnimatedTextKit(
-              animatedTexts: [
-                TypewriterAnimatedText(
-                  speed: Duration(milliseconds: 60),
-                  textStyle: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.03,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red),
-                  "Saturday, September 3, 2022, 2PM",
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 12.0,
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            // ignore: prefer_const_literals_to_create_immutables
-            child: Wrap(children: [
-              Text(
-                "Address:",
-                style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.height * 0.02,
-                  fontWeight: FontWeight.bold,
+          Expanded(
+            flex: 2,
+            child: AspectRatio(
+              aspectRatio: 8,
+              child: SizedBox(
+                width: double.infinity,
+                child: GridView(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                  children: [
+                    MyBox(image: 'images/p7.jpeg'),
+                    MyBox(image: 'images/p2.jpeg'),
+                    MyBox(image: 'images/p3.jpeg'),
+                    MyBox(image: 'images/p4.jpeg'),
+                    MyBox(image: 'images/p5.jpeg'),
+                    MyBox(image: 'images/p6.jpeg'),
+                    MyBox(image: 'images/p7.jpeg'),
+                    MyBox(image: 'images/p8.jpeg'),
+                  ],
                 ),
               ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Text("Agbada Nenwe, Aniri LGA. Enugu State",
-                  style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height * 0.02,
-                    fontStyle: FontStyle.italic,
-                  )),
-            ]),
-          ),
-          SizedBox(
-            height: 12.0,
+            ),
           ),
         ],
       ),
