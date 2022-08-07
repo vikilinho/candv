@@ -1,3 +1,4 @@
+import 'package:candv/views/responsive_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +25,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const ResponsivePage(),
+      home:  ResponsivePage(
+        mobilePage: const MobilePage(),
+        tabletPage: const TabletPage(),
+        desktopPage: const DesktopPage(),
+      ),
+      ),
     );
   }
 }
