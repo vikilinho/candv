@@ -20,6 +20,16 @@ class ResponsivePage extends StatefulWidget {
 class _ResponsivePageState extends State<ResponsivePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return LayoutBuilder(
+      builder: (context, sizingInformation) {
+        if (sizingInformation.maxWidth < 500) {
+          return widget.mobilePage;
+        } else if (sizingInformation.maxWidth < 1000) {
+          return widget.tabletPage;
+        } else {
+          return widget.desktopPage;
+        }
+      },
+    );
   }
 }

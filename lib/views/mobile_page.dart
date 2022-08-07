@@ -12,6 +12,13 @@ class MobilePage extends StatefulWidget {
 class _MobilePageState extends State<MobilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Mobile Page'),
+      ),
+      body: const Center(
+        child: Text('Mobile'),
+      ),
+    );
   }
 }
