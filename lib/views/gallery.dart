@@ -23,17 +23,20 @@ class _GalleryState extends State<Gallery> {
           children: [
             const Text(
                 'Take a look at our journey through the lens of a camera'),
-            AspectRatio(
-              aspectRatio: 1,
-              child: SizedBox(
-                width: double.infinity,
-                child: GridView.builder(
-                  itemCount: 10,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2),
-                  itemBuilder: (context, index) {
-                    return MyBox();
-                  },
+            Expanded(
+              child: AspectRatio(
+                aspectRatio: 1,
+                child: SizedBox(
+                  width: double.infinity,
+                  child: GridView.builder(
+                    itemCount: 10,
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2),
+                    itemBuilder: (context, index) {
+                      return MyBox();
+                    },
+                  ),
                 ),
               ),
             ),
