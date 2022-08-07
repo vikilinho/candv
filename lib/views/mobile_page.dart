@@ -1,14 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'dart:ui';
-
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:candv/utils.dart';
 import 'package:candv/views/gallery.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-final String logo = 'images/logo.svg';
 
 class MobilePage extends StatefulWidget {
   const MobilePage({Key? key}) : super(key: key);
@@ -84,34 +79,39 @@ class _MobilePageState extends State<MobilePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: AnimatedTextKit(
-                animatedTexts: [
-                  FadeAnimatedText(
-                    textStyle: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.04,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.pink,
-                    ),
-                    'Chigozie',
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      FadeAnimatedText(
+                        textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.pink,
+                        ),
+                        'Chigozie',
+                      ),
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
+                          ),
+                          '&'),
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
+                          'Chigozie & Victor'),
+                    ],
                   ),
-                  FadeAnimatedText(
-                      textStyle: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height * 0.04,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red,
-                      ),
-                      '&'),
-                  FadeAnimatedText(
-                      textStyle: TextStyle(
-                        fontSize: MediaQuery.of(context).size.height * 0.04,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue,
-                      ),
-                      'Chigozie & Victor'),
-                ],
-              ),
+                ),
+              ],
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.4,
@@ -186,13 +186,19 @@ class _MobilePageState extends State<MobilePage> {
               aspectRatio: 1,
               child: SizedBox(
                 width: double.infinity,
-                child: GridView.builder(
-                  itemCount: 6,
+                child: GridView(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
-                  itemBuilder: (context, index) {
-                    return MyBox();
-                  },
+                  children: [
+                    MyBox(image: 'images/p7.jpeg'),
+                    MyBox(image: 'images/p2.jpeg'),
+                    MyBox(image: 'images/p3.jpeg'),
+                    MyBox(image: 'images/p4.jpeg'),
+                    MyBox(image: 'images/p5.jpeg'),
+                    MyBox(image: 'images/p6.jpeg'),
+                    MyBox(image: 'images/p7.jpeg'),
+                    MyBox(image: 'images/p8.jpeg'),
+                  ],
                 ),
               ),
             ),

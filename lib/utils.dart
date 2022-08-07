@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyBox extends StatelessWidget {
+  final String image;
+
+  const MyBox({super.key, required this.image});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -8,7 +11,10 @@ class MyBox extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: Colors.grey[400],
+          image: DecorationImage(
+            image: AssetImage(image),
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );
