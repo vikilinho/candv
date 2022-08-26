@@ -64,6 +64,58 @@ class _SliverMobileState extends State<SliverMobile> {
                     ),
                   ],
                 ),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.99,
+                  margin: EdgeInsets.all(50.0),
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("images/c&v.png"),
+                          fit: BoxFit.cover), //change image fill type
+                      shape: BoxShape.circle),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                          speed: Duration(milliseconds: 30),
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.03,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          'You are highly invited to celebrate our wedding.'),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 12.0,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TypewriterAnimatedText(
+                        speed: Duration(milliseconds: 60),
+                        textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.03,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red),
+                        "Saturday, September 3, 2022, 2PM",
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 12.0,
+                ),
+                Wrap(children: [
+                  Text("Agbada Nenwe, Aniri LGA. Enugu State",
+                      style: TextStyle(
+                        fontSize: MediaQuery.of(context).size.height * 0.02,
+                        fontStyle: FontStyle.italic,
+                      )),
+                ]),
               ],
             ),
           )
