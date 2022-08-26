@@ -12,12 +12,17 @@ class _SliverMobileState extends State<SliverMobile> {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
+      // ignore: prefer_const_constructors
       body: CustomScrollView(
+        // ignore: prefer_const_literals_to_create_immutables
         slivers: [
+          // ignore: prefer_const_constructors
           SliverAppBar(
+              expandedHeight: 300,
+              backgroundColor: Color(0xff700548),
               flexibleSpace: FlexibleSpaceBar(
-            background: Image.asset("wedding"),
-          ))
+                  // background: Image.asset("images/c&v.png"),
+                  ))
         ],
       ),
     );
