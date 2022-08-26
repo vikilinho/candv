@@ -15,6 +15,7 @@ class _DesktopPageState extends State<DesktopPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffD9D9D9),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -167,6 +168,7 @@ class _DesktopPageState extends State<DesktopPage> {
               child: SizedBox(
                 width: double.infinity,
                 child: GridView(
+                  shrinkWrap: true,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
                   // ignore: prefer_const_literals_to_create_immutables
@@ -182,6 +184,33 @@ class _DesktopPageState extends State<DesktopPage> {
                   ],
                 ),
               ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Card(
+                    elevation: 5.0,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                      decoration: BoxDecoration(color: Colors.white),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Wrap(children: [
+                              Text("Chigozie"),
+                              Icon(Icons.favorite, color: Colors.red),
+                              Text("Victor"),
+                            ]),
+                            Text("Thank you for coming to our wedding"),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
           ],
         ),
