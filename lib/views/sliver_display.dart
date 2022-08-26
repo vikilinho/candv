@@ -18,11 +18,16 @@ class _SliverMobileState extends State<SliverMobile> {
         slivers: [
           // ignore: prefer_const_constructors
           SliverAppBar(
-              expandedHeight: 300,
-              backgroundColor: Color(0xff700548),
-              flexibleSpace: FlexibleSpaceBar(
+              expandedHeight: 200,
+              backgroundColor: const Color(0xff700548),
+              flexibleSpace: const FlexibleSpaceBar(
                   // background: Image.asset("images/c&v.png"),
-                  ))
+                  )),
+          SliverToBoxAdapter(
+            child: Column(
+              children: [],
+            ),
+          )
         ],
       ),
     );
