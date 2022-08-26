@@ -19,6 +19,7 @@ class _SliverMobileState extends State<SliverMobile> {
         slivers: [
           // ignore: prefer_const_constructors
           SliverAppBar(
+              pinned: true,
               expandedHeight: 100,
               backgroundColor: const Color(0xff700548),
               flexibleSpace: const FlexibleSpaceBar(
@@ -31,7 +32,7 @@ class _SliverMobileState extends State<SliverMobile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: AnimatedTextKit(
                         animatedTexts: [
                           FadeAnimatedText(
@@ -67,8 +68,8 @@ class _SliverMobileState extends State<SliverMobile> {
                 Container(
                   height: MediaQuery.of(context).size.height * 0.4,
                   width: MediaQuery.of(context).size.width * 0.99,
-                  margin: EdgeInsets.all(50.0),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.all(50.0),
+                  decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("images/c&v.png"),
                           fit: BoxFit.cover), //change image fill type
