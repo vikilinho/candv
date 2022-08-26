@@ -13,7 +13,7 @@ class SliverMobile extends StatefulWidget {
 
 class _SliverMobileState extends State<SliverMobile> {
   List<Widget> mybox = [
-    MyBox(image: 'images/p7.jpeg'),
+    MyBox(image: 'images/p1.jpeg'),
     MyBox(image: 'images/p2.jpeg'),
     MyBox(image: 'images/p3.jpeg'),
     MyBox(image: 'images/p4.jpeg'),
@@ -186,6 +186,7 @@ class _SliverMobileState extends State<SliverMobile> {
             ),
           ),
           SliverGrid(
+            // ignore: prefer_const_constructors
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               mainAxisSpacing: 20.0,
               crossAxisSpacing: 10.0,
@@ -193,11 +194,11 @@ class _SliverMobileState extends State<SliverMobile> {
               childAspectRatio: 1.0,
             ),
             delegate: SliverChildBuilderDelegate(
-              ((BuildContext context, int index) {
+              ((context, int index) {
                 return Padding(
                     padding: const EdgeInsets.all(8), child: mybox[index]);
               }),
-              childCount: _gridItems.length,
+              childCount: 8,
             ),
           )
         ],
