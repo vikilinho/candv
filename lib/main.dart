@@ -1,4 +1,5 @@
 import 'package:candv/views/desktop_page.dart';
+import 'package:candv/views/desktop_sliver.dart';
 import 'package:candv/views/mobile_page.dart';
 import 'package:candv/views/responsive_page.dart';
 import 'package:candv/views/sliver_display.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       //   tabletPage: TabletPage(),
       //   desktopPage: DesktopPage(),
       // ),
-      home: const SliverMobile(),
+      home: DesktopSliver(),
     );
   }
 }

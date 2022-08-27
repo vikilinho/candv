@@ -28,8 +28,17 @@ class _DesktopSliverState extends State<DesktopSliver> {
         slivers: [
           // ignore: prefer_const_constructors
           SliverAppBar(
+              leading: Container(
+                child: Text(
+                  "C&V",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontStyle: FontStyle.italic,
+                  ),
+                ),
+              ),
               pinned: true,
-              expandedHeight: 50,
+              expandedHeight: 100,
               backgroundColor: const Color(0xff700548),
               flexibleSpace: const FlexibleSpaceBar(
                   // background: Image.asset("images/c&v.png"),
@@ -37,6 +46,9 @@ class _DesktopSliverState extends State<DesktopSliver> {
           SliverToBoxAdapter(
             child: Column(
               children: [
+                SizedBox(
+                  height: 10,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -75,9 +87,9 @@ class _DesktopSliverState extends State<DesktopSliver> {
                   ],
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.4,
+                  height: MediaQuery.of(context).size.height * 0.9,
                   width: MediaQuery.of(context).size.width * 0.99,
-                  margin: const EdgeInsets.all(50.0),
+                  margin: const EdgeInsets.all(200.0),
                   decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("images/c&v.png"),
