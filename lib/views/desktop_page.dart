@@ -15,7 +15,6 @@ class _DesktopPageState extends State<DesktopPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffD9D9D9),
       body: SingleChildScrollView(
         child: Column(
           children: [
