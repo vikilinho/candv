@@ -27,74 +27,92 @@ class _DesktopSliverState extends State<DesktopSliver> {
         // ignore: prefer_const_literals_to_create_immutables
         slivers: [
           // ignore: prefer_const_constructors
-          SliverAppBar(
-              leading: Container(
-                child: Text(
-                  "C&V",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
-              ),
-              pinned: true,
-              expandedHeight: 100,
-              backgroundColor: const Color(0xff700548),
-              flexibleSpace: const FlexibleSpaceBar(
-                  // background: Image.asset("images/c&v.png"),
-                  )),
+
           SliverToBoxAdapter(
             child: Column(
               children: [
-                SizedBox(
-                  height: 10,
-                ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: AnimatedTextKit(
-                        animatedTexts: [
-                          FadeAnimatedText(
-                            textStyle: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.height * 0.04,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.pink,
-                            ),
-                            'Chigozie',
+                    Expanded(
+                      child: Card(
+                        elevation: 0,
+                        child: Container(
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff700548),
                           ),
-                          FadeAnimatedText(
-                              textStyle: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).size.height * 0.04,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.red,
-                              ),
-                              '&'),
-                          FadeAnimatedText(
-                              textStyle: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).size.height * 0.04,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.blue,
-                              ),
-                              'Chigozie & Victor'),
-                        ],
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 20),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Wrap(children: [
+                                  Text(
+                                    "Chigozie",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  Icon(Icons.favorite, color: Colors.red),
+                                  Text(
+                                    "Victor",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ]),
+                                TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      'Gallery',
+                                      style: TextStyle(color: Colors.white),
+                                    )),
+                                TextButton(
+                                    onPressed: () {},
+                                    child: Text('Direction',
+                                        style: TextStyle(color: Colors.white))),
+                              ],
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                    )
                   ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      FadeAnimatedText(
+                        textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.04,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.pink,
+                        ),
+                        'Chigozie',
+                      ),
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.red,
+                          ),
+                          '&'),
+                      FadeAnimatedText(
+                          textStyle: TextStyle(
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
+                          'Chigozie & Victor'),
+                    ],
+                  ),
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * 0.9,
-                  width: MediaQuery.of(context).size.width * 0.99,
+                  width: double.maxFinite,
                   margin: const EdgeInsets.all(200.0),
                   decoration: const BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("images/c&v.png"),
-                          fit: BoxFit.cover), //change image fill type
-                      shape: BoxShape.circle),
+                    image: DecorationImage(
+                        image: AssetImage("images/card.png"),
+                        fit: BoxFit.cover), //change image fill type
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
@@ -106,36 +124,10 @@ class _DesktopSliverState extends State<DesktopSliver> {
                             fontSize: MediaQuery.of(context).size.height * 0.03,
                             fontStyle: FontStyle.italic,
                           ),
-                          'You are highly invited to celebrate our wedding.'),
+                          'A bit of our story through the lense of a camera...'),
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 12.0,
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: AnimatedTextKit(
-                    animatedTexts: [
-                      TypewriterAnimatedText(
-                        speed: Duration(milliseconds: 60),
-                        textStyle: TextStyle(
-                            fontSize: MediaQuery.of(context).size.height * 0.03,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.red),
-                        "Saturday, September 3, 2022, 2PM",
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 12.0,
-                ),
-                Text("Agbada Nenwe, Aniri LGA. Enugu State",
-                    style: TextStyle(
-                      fontSize: MediaQuery.of(context).size.height * 0.02,
-                      fontStyle: FontStyle.italic,
-                    )),
                 const SizedBox(
                   height: 12.0,
                 ),
