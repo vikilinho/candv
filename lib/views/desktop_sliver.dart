@@ -37,7 +37,8 @@ class _DesktopSliverState extends State<DesktopSliver> {
                       child: Card(
                         elevation: 0,
                         child: Container(
-                          height: MediaQuery.of(context).size.height * 0.15,
+                          height: MediaQuery.of(context).size.height * 0.1,
+                          width: MediaQuery.of(context).size.width * 0.02,
                           decoration: BoxDecoration(
                             color: const Color(0xff700548),
                           ),
@@ -57,16 +58,6 @@ class _DesktopSliverState extends State<DesktopSliver> {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ]),
-                                TextButton(
-                                    onPressed: () {},
-                                    child: Text(
-                                      'Gallery',
-                                      style: TextStyle(color: Colors.white),
-                                    )),
-                                TextButton(
-                                    onPressed: () {},
-                                    child: Text('Direction',
-                                        style: TextStyle(color: Colors.white))),
                               ],
                             ),
                           ),
@@ -74,35 +65,6 @@ class _DesktopSliverState extends State<DesktopSliver> {
                       ),
                     )
                   ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: AnimatedTextKit(
-                    animatedTexts: [
-                      FadeAnimatedText(
-                        textStyle: TextStyle(
-                          fontSize: MediaQuery.of(context).size.height * 0.04,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.pink,
-                        ),
-                        'Chigozie',
-                      ),
-                      FadeAnimatedText(
-                          textStyle: TextStyle(
-                            fontSize: MediaQuery.of(context).size.height * 0.04,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.red,
-                          ),
-                          '&'),
-                      FadeAnimatedText(
-                          textStyle: TextStyle(
-                            fontSize: MediaQuery.of(context).size.height * 0.04,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.blue,
-                          ),
-                          'Chigozie & Victor'),
-                    ],
-                  ),
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * 0.9,
@@ -148,6 +110,48 @@ class _DesktopSliverState extends State<DesktopSliver> {
                     padding: const EdgeInsets.all(8), child: mybox[index]);
               }),
               childCount: 8,
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Card(
+                    elevation: 0,
+                    child: Container(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                      width: MediaQuery.of(context).size.width * 0.02,
+                      decoration: BoxDecoration(
+                        color: const Color(0xff700548),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Wrap(children: [
+                              Text(
+                                "Chigozie",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Icon(Icons.favorite, color: Colors.red),
+                              Text(
+                                "Victor",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              SizedBox(
+                                width: 100,
+                              ),
+                              Text("We look forward to your arrival",
+                                  style: TextStyle(color: Colors.white)),
+                            ]),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
           )
         ],
