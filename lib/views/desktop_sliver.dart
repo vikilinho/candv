@@ -11,7 +11,6 @@ class DesktopSliver extends StatefulWidget {
 
 class _DesktopSliverState extends State<DesktopSliver> {
   List<Widget> mybox = [
-    MyBox(image: 'images/p1.jpeg'),
     MyBox(image: 'images/p2.jpeg'),
     MyBox(image: 'images/p3.jpeg'),
     MyBox(image: 'images/p4.jpeg'),
@@ -19,6 +18,17 @@ class _DesktopSliverState extends State<DesktopSliver> {
     MyBox(image: 'images/p6.jpeg'),
     MyBox(image: 'images/p7.jpeg'),
     MyBox(image: 'images/p8.jpeg'),
+    MyBox(image: 'images/9.jpeg'),
+    MyBox(image: 'images/10.jpeg'),
+    MyBox(image: 'images/11.jpeg'),
+    MyBox(image: 'images/12.jpeg'),
+    MyBox(image: 'images/13.jpeg'),
+    MyBox(image: 'images/14.jpeg'),
+    MyBox(image: 'images/15.jpeg'),
+    MyBox(image: 'images/16.jpeg'),
+    MyBox(image: 'images/17.jpeg'),
+    MyBox(image: 'images/18.jpeg'),
+    MyBox(image: 'images/p1.jpeg'),
   ];
 
   List<Widget> cards = [
@@ -155,7 +165,7 @@ class _DesktopSliverState extends State<DesktopSliver> {
                 return Padding(
                     padding: const EdgeInsets.all(8), child: mybox[index]);
               }),
-              childCount: 8,
+              childCount: mybox.length,
             ),
           ),
           SliverToBoxAdapter(
