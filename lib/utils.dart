@@ -7,16 +7,18 @@ class MyBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          image: DecorationImage(
-            image: AssetImage(image),
-            fit: BoxFit.contain,
-          ),
-        ),
-      ),
-    );
+        padding: const EdgeInsets.all(8),
+        child: CircleAvatar(
+          backgroundImage: AssetImage(image),
+        ));
   }
 }
+// Container(
+//         decoration: BoxDecoration(
+//           borderRadius: BorderRadius.circular(8),
+//           image: DecorationImage(
+//             image: AssetImage(image),
+//             fit: BoxFit.contain,
+//           ),
+//         ),
+//       ),
