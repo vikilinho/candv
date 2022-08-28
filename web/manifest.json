@@ -1,11 +1,11 @@
 {
-    "name": "CandV",
-    "short_name": "CandV",
+    "name": "Heart Story",
+    "short_name": "HeartStory",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Story right from the heart",
+    "description": "Story straight from the heart",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
