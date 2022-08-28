@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969491440745",
+    "project_id": "candv-59675",
+    "storage_bucket": "candv-59675.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969491440745:android:4b51dcc076d18ef7156ef8",
+        "android_client_info": {
+          "package_name": "com.example.candv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969491440745-ckuqstemk8bp88f7mctd7m4o0ipk94sf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDelzvHZXBdjQmTGz7mqDqbx4LTLB9ayO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969491440745-ckuqstemk8bp88f7mctd7m4o0ipk94sf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
