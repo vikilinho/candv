@@ -77,7 +77,7 @@ class _DesktopSliverState extends State<DesktopSliver> {
                         width: MediaQuery.of(context).size.height * 0.9,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("images/vic2.png"),
+                              image: AssetImage("images/1.png"),
                               fit: BoxFit.contain), //change image fill type
                         ),
                       ),
@@ -102,7 +102,7 @@ class _DesktopSliverState extends State<DesktopSliver> {
                         width: MediaQuery.of(context).size.height * 0.9,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage("images/vic2.png"),
+                              image: AssetImage("images/2.png"),
                               fit: BoxFit.contain), //change image fill type
                         ),
                       ),
