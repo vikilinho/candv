@@ -118,21 +118,27 @@ class _DesktopSliverState extends State<DesktopSliver> {
                         fit: BoxFit.contain), //change image fill type
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: AnimatedTextKit(
-                    animatedTexts: [
-                      TypewriterAnimatedText(
-                          speed: Duration(milliseconds: 30),
-                          textStyle: TextStyle(
-                            fontSize: MediaQuery.of(context).size.height * 0.03,
-                            fontStyle: FontStyle.italic,
-                          ),
-                          'A bit of our story through the lense of a camera...'),
-                    ],
-                  ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
               ],
+            ),
+          ),
+
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  TypewriterAnimatedText(
+                      speed: Duration(milliseconds: 30),
+                      textStyle: TextStyle(
+                          fontSize: MediaQuery.of(context).size.height * 0.02,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.red),
+                      'A bit of our story through the lense of a camera...'),
+                ],
+              ),
             ),
           ),
 
