@@ -160,49 +160,83 @@ class _DesktopSliverState extends State<DesktopSliver> {
           ),
           SliverToBoxAdapter(
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: Card(
-                    elevation: 0,
-                    child: Container(
-                      height: MediaQuery.of(context).size.height * 0.1,
-                      width: MediaQuery.of(context).size.width * 0.02,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff700548),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Flexible(
-                              flex: 1,
-                              child: Wrap(children: [
-                                Text(
-                                  "Chigozie",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                                Icon(Icons.favorite, color: Colors.red),
-                                Text(
-                                  "Victor",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                                SizedBox(
-                                  width: 100,
-                                ),
-                                Text("We look forward to your arrival",
-                                    style: TextStyle(color: Colors.white)),
-                              ]),
-                            ),
-                          ],
-                        ),
-                      ),
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.2,
+                    width: MediaQuery.of(context).size.height * 0.9,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("images/heart.png"),
+                          fit: BoxFit.contain), //change image fill type
                     ),
                   ),
-                )
+                ),
+                // SizedBox(
+                //   width: MediaQuery.of(context).size.height * 0.1,
+                // ),
+                Flexible(
+                  flex: 1,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.2,
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("images/heart.png"),
+                          fit: BoxFit.contain), //change image fill type
+                    ),
+                  ),
+                ),
               ],
             ),
           )
+          // SliverToBoxAdapter(
+          //   child: Row(
+          //     children: [
+          //       Expanded(
+          //         child: Card(
+          //           elevation: 0,
+          //           child: Container(
+          //             height: MediaQuery.of(context).size.height * 0.1,
+          //             width: MediaQuery.of(context).size.width * 0.02,
+          //             decoration: BoxDecoration(
+          //               color: const Color(0xff700548),
+          //             ),
+          //             child: Padding(
+          //               padding: EdgeInsets.symmetric(horizontal: 20),
+          //               child: Row(
+          //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //                 children: [
+          //                   Flexible(
+          //                     flex: 1,
+          //                     child: Wrap(children: [
+          //                       Text(
+          //                         "Chigozie",
+          //                         style: TextStyle(color: Colors.white),
+          //                       ),
+          //                       Icon(Icons.favorite, color: Colors.red),
+          //                       Text(
+          //                         "Victor",
+          //                         style: TextStyle(color: Colors.white),
+          //                       ),
+          //                       SizedBox(
+          //                         width: 100,
+          //                       ),
+          //                       Text("We look forward to your arrival",
+          //                           style: TextStyle(color: Colors.white)),
+          //                     ]),
+          //                   ),
+          //                 ],
+          //               ),
+          //             ),
+          //           ),
+          //         ),
+          //       )
+          //     ],
+          //   ),
+          // )
         ],
       ),
     );
