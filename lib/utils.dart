@@ -13,7 +13,7 @@ class MyBox extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           image: DecorationImage(
             image: AssetImage(image),
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
         ),
       ),

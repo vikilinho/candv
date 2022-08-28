@@ -20,6 +20,11 @@ class _DesktopSliverState extends State<DesktopSliver> {
     MyBox(image: 'images/p7.jpeg'),
     MyBox(image: 'images/p8.jpeg'),
   ];
+
+  List<Widget> cards = [
+    MyBox(image: 'images/vic.png'),
+    MyBox(image: 'images/vic.png'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,48 +37,85 @@ class _DesktopSliverState extends State<DesktopSliver> {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Expanded(
-                      child: Card(
-                        elevation: 0,
-                        child: Container(
-                          height: MediaQuery.of(context).size.height * 0.1,
-                          width: MediaQuery.of(context).size.width * 0.02,
-                          decoration: BoxDecoration(
-                            color: const Color(0xff700548),
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 20),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Wrap(children: [
-                                  Text(
-                                    "Chigozie",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                  Icon(Icons.favorite, color: Colors.red),
-                                  Text(
-                                    "Victor",
-                                    style: TextStyle(color: Colors.white),
-                                  ),
-                                ]),
-                              ],
-                            ),
-                          ),
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.2,
+                        width: MediaQuery.of(context).size.height * 0.9,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("images/heart.png"),
+                              fit: BoxFit.contain), //change image fill type
                         ),
                       ),
-                    )
+                    ),
+                    // SizedBox(
+                    //   width: MediaQuery.of(context).size.height * 0.1,
+                    // ),
+                    Flexible(
+                      flex: 1,
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.2,
+                        width: double.infinity,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("images/heart.png"),
+                              fit: BoxFit.contain), //change image fill type
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Flexible(
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.9,
+                        width: MediaQuery.of(context).size.height * 0.9,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("images/vic2.png"),
+                              fit: BoxFit.contain), //change image fill type
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.2,
+                  width: MediaQuery.of(context).size.height * 0.3,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("images/arrow.png"),
+                        fit: BoxFit.contain), //change image fill type
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Flexible(
+                      child: Container(
+                        height: MediaQuery.of(context).size.height * 0.9,
+                        width: MediaQuery.of(context).size.height * 0.9,
+                        decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("images/vic2.png"),
+                              fit: BoxFit.contain), //change image fill type
+                        ),
+                      ),
+                    ),
                   ],
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * 0.9,
-                  width: double.maxFinite,
-                  margin: const EdgeInsets.all(200.0),
+                  width: MediaQuery.of(context).size.height * 0.9,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("images/card.png"),
-                        fit: BoxFit.cover), //change image fill type
+                        image: AssetImage("images/invite.png"),
+                        fit: BoxFit.contain), //change image fill type
                   ),
                 ),
                 Padding(
@@ -90,12 +132,10 @@ class _DesktopSliverState extends State<DesktopSliver> {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 12.0,
-                ),
               ],
             ),
           ),
+
           SliverGrid(
             // ignore: prefer_const_constructors
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -129,22 +169,25 @@ class _DesktopSliverState extends State<DesktopSliver> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Wrap(children: [
-                              Text(
-                                "Chigozie",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              Icon(Icons.favorite, color: Colors.red),
-                              Text(
-                                "Victor",
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              SizedBox(
-                                width: 100,
-                              ),
-                              Text("We look forward to your arrival",
-                                  style: TextStyle(color: Colors.white)),
-                            ]),
+                            Flexible(
+                              flex: 1,
+                              child: Wrap(children: [
+                                Text(
+                                  "Chigozie",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                Icon(Icons.favorite, color: Colors.red),
+                                Text(
+                                  "Victor",
+                                  style: TextStyle(color: Colors.white),
+                                ),
+                                SizedBox(
+                                  width: 100,
+                                ),
+                                Text("We look forward to your arrival",
+                                    style: TextStyle(color: Colors.white)),
+                              ]),
+                            ),
                           ],
                         ),
                       ),
