@@ -88,5 +88,17 @@
       "name": "fearow",
       "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png"
     },
+   {
+      "name": "ekans",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png"
+    },
+    {
+      "name": "arbok",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/24.png"
+    },
+    {
+      "name": "pikachu",
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+    }
 ]
 }
