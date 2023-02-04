@@ -2,103 +2,295 @@
 "pokemon": [
    {
       "name": "bulbasaur",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+      "height": "0.71 m",
+    "weight": "6.9 kg",
+    "candy": "Bulbasaur Candy",
+    "candy_count": 25,
+    "egg": "2 km",
+    "spawn_chance": 0.69,
+    "avg_spawns": 69,
+    "spawn_time": "20:00"
     },
     {
       "name": "ivysaur",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png",
+      "height": "0.99 m",
+    "weight": "13.0 kg",
+    "candy": "Bulbasaur Candy",
+    "candy_count": 100,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.042,
+    "avg_spawns": 4.2,
+    "spawn_time": "07:00"
     },
   {
       "name": "venusaur",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+      "height": "2.01 m",
+    "weight": "100.0 kg",
+    "candy": "Bulbasaur Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.017,
+    "avg_spawns": 1.7,
+    "spawn_time": "11:30"
     },
     {
       "name": "charmander",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
+      "height": "0.61 m",
+    "weight": "8.5 kg",
+    "candy": "Charmander Candy",
+    "candy_count": 25,
+    "egg": "2 km",
+    "spawn_chance": 0.253,
+    "avg_spawns": 25.3,
+    "spawn_time": "08:45"
     },
     {
       "name": "charmeleon",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png",
+      "height": "1.09 m",
+    "weight": "19.0 kg",
+    "candy": "Charmander Candy",
+    "candy_count": 100,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.012,
+    "avg_spawns": 1.2,
+    "spawn_time": "19:00"
     },
     {
       "name": "charizard",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+      "height": "1.70 m",
+    "weight": "90.5 kg",
+    "candy": "Charmander Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.0031,
+    "avg_spawns": 0.31,
+    "spawn_time": "13:34"
     },
     {
       "name": "squirtle",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
+      "height": "0.51 m",
+    "weight": "9.0 kg",
+    "candy": "Squirtle Candy",
+    "candy_count": 25,
+    "egg": "2 km",
+    "spawn_chance": 0.58,
+    "avg_spawns": 58,
+    "spawn_time": "04:25"
     },
     {
       "name": "wartortle",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/8.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/8.png",
+      "height": "0.99 m",
+    "weight": "22.5 kg",
+    "candy": "Squirtle Candy",
+    "candy_count": 100,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.034,
+    "avg_spawns": 3.4,
+    "spawn_time": "07:02"
     },
     {
       "name": "blastoise",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+      "height": "1.60 m",
+    "weight": "85.5 kg",
+    "candy": "Squirtle Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.0067,
+    "avg_spawns": 0.67,
+    "spawn_time": "00:06"
     },
     {
       "name": "caterpie",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
+      "height": "0.30 m",
+    "weight": "2.9 kg",
+    "candy": "Caterpie Candy",
+    "candy_count": 12,
+    "egg": "2 km",
+    "spawn_chance": 3.032,
+    "avg_spawns": 303.2,
+    "spawn_time": "16:35"
     },
     {
       "name": "metapod",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/11.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/11.png",
+      "height": "0.71 m",
+    "weight": "9.9 kg",
+    "candy": "Caterpie Candy",
+    "candy_count": 50,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.187,
+    "avg_spawns": 18.7,
+    "spawn_time": "02:11"
     },
     {
       "name": "butterfree",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png",
+       "height": "1.09 m",
+    "weight": "32.0 kg",
+    "candy": "Caterpie Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.022,
+    "avg_spawns": 2.2,
+    "spawn_time": "05:23"
     },
     {
       "name": "weedle",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png",
+       "height": "0.30 m",
+    "weight": "3.2 kg",
+    "candy": "Weedle Candy",
+    "candy_count": 12,
+    "egg": "2 km",
+    "spawn_chance": 7.12,
+    "avg_spawns": 712,
+    "spawn_time": "02:21"
     },
     {
       "name": "kakuna",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/14.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/14.png",
+      "height": "0.61 m",
+    "weight": "10.0 kg",
+    "candy": "Weedle Candy",
+    "candy_count": 50,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.44,
+    "avg_spawns": 44,
+    "spawn_time": "02:30"
     },
     {
       "name": "beedrill",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png",
+      "height": "0.99 m",
+    "weight": "29.5 kg",
+    "candy": "Weedle Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.051,
+    "avg_spawns": 5.1,
+    "spawn_time": "04:50"
     },
     {
       "name": "pidgey",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/16.png",
+      "height": "0.30 m",
+    "weight": "1.8 kg",
+    "candy": "Pidgey Candy",
+    "candy_count": 12,
+    "egg": "2 km",
+    "spawn_chance": 15.98,
+    "avg_spawns": 1.598,
+    "spawn_time": "01:34"
     },
     {
       "name": "pidgeotto",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/17.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/17.png",
+      "height": "1.09 m",
+    "weight": "30.0 kg",
+    "candy": "Pidgey Candy",
+    "candy_count": 50,
+    "egg": "Not in Eggs",
+    "spawn_chance": 1.02,
+    "avg_spawns": 102,
+    "spawn_time": "01:30",
+    "multipliers": [1.79]
     },
     {
       "name": "pidgeot",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/18.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/18.png",
+      "height": "1.50 m",
+    "weight": "39.5 kg",
+    "candy": "Pidgey Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.13,
+    "avg_spawns": 13,
+    "spawn_time": "01:50"
     },
     {
       "name": "rattata",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/19.png",
+      "height": "0.30 m",
+    "weight": "3.5 kg",
+    "candy": "Rattata Candy",
+    "candy_count": 25,
+    "egg": "2 km",
+    "spawn_chance": 13.05,
+    "avg_spawns": 1.305,
+    "spawn_time": "01:55"
     },
     {
       "name": "raticate",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png",
+      "height": "0.71 m",
+    "weight": "18.5 kg",
+    "candy": "Rattata Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.41,
+    "avg_spawns": 41,
+    "spawn_time": "01:56"
     },
     {
       "name": "spearow",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/21.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/21.png",
+       "height": "0.30 m",
+    "weight": "2.0 kg",
+    "candy": "Spearow Candy",
+    "candy_count": 50,
+    "egg": "2 km",
+    "spawn_chance": 4.73,
+    "avg_spawns": 473,
+    "spawn_time": "12:25"
     },
     {
       "name": "fearow",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/22.png",
+      "height": "1.19 m",
+    "weight": "38.0 kg",
+    "candy": "Spearow Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.15,
+    "avg_spawns": 15,
+    "spawn_time": "01:11"
     },
    {
       "name": "ekans",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/23.png",
+       "height": "2.01 m",
+    "weight": "6.9 kg",
+    "candy": "Ekans Candy",
+    "candy_count": 50,
+    "egg": "5 km",
+    "spawn_chance": 2.27,
+    "avg_spawns": 227,
+    "spawn_time": "12:20"
     },
     {
       "name": "arbok",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/24.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/24.png",
+      "height": "3.51 m",
+    "weight": "65.0 kg",
+    "candy": "Ekans Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.072,
+    "avg_spawns": 7.2,
+    "spawn_time": "01:50"
     },
     {
       "name": "pikachu",
-      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+      "url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
+       "height": "0.41 m",
+    "weight": "6.0 kg",
+    "candy": "Pikachu Candy",
+    "candy_count": 50,
+    "egg": "2 km",
+    "spawn_chance": 0.21,
+    "avg_spawns": 21,
+    "spawn_time": "04:00"
     }
 ]
 }
