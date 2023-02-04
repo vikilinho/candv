@@ -197,8 +197,8 @@
     "egg": "Not in Eggs",
     "spawn_chance": 1.02,
     "avg_spawns": 102,
-    "spawn_time": "01:30",
-    "multipliers": [1.79]
+    "spawn_time": "01:30"
+  
     },
     {
       "name": "pidgeot",
