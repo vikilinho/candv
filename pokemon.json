@@ -958,6 +958,78 @@
 "spawn_chance": 0.21,
 "avg_spawns": 21,
 "spawn_time": "21:00"
+},
+{
+"name": "Haunter",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png",
+"height": "1.60 m",
+"weight": "0.1 kg",
+"candy": "Gastly Candy",
+"candy_count": 100,
+"egg": "5 km",
+"spawn_chance": 0.12,
+"avg_spawns": 12,
+"spawn_time": "00:00"
+},
+{
+"name": "Gengar",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/94.png",
+"height": "1.50 m",
+"weight": "40.5 kg",
+"candy": "Gastly Candy",
+"candy_count": 200,
+"egg": "5 km",
+"spawn_chance": 0.02,
+"avg_spawns": 2,
+"spawn_time": "03:00"
+},
+{
+"name": "Onix",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/95.png",
+"height": "8.79 m",
+"weight": "210.0 kg",
+"candy": "Onix Candy",
+"candy_count": 50,
+"egg": "10 km",
+"spawn_chance": 0.01,
+"avg_spawns": 1,
+"spawn_time": "06:00"
+},
+{
+"name": "Drowzee",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/96.png",
+"height": "0.99 m",
+"weight": "32.4 kg",
+"candy": "Drowzee Candy",
+"candy_count": 50,
+"egg": "5 km",
+"spawn_chance": 0.09,
+"avg_spawns": 9,
+"spawn_time": "09:00"
+},
+{
+"name": "Hypno",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/97.png",
+"height": "1.60 m",
+"weight": "75.6 kg",
+"candy": "Drowzee Candy",
+"candy_count": 100,
+"egg": "5 km",
+"spawn_chance": 0.05,
+"avg_spawns": 5,
+"spawn_time": "12:00"
+},
+{
+"name": "Krabby",
+"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/98.png",
+"height": "0.41 m",
+"weight": "6.5 kg",
+"candy": "Krabby Candy",
+"candy_count": 50,
+"egg": "2 km",
+"spawn_chance": 0.15,
+"avg_spawns": 15,
+"spawn_time
 }
 
 ]
