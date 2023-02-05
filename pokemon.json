@@ -1019,18 +1019,6 @@
 "avg_spawns": 5,
 "spawn_time": "12:00"
 },
-{
-"name": "Krabby",
-"url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/98.png",
-"height": "0.41 m",
-"weight": "6.5 kg",
-"candy": "Krabby Candy",
-"candy_count": 50,
-"egg": "2 km",
-"spawn_chance": 0.15,
-"avg_spawns": 15,
-"spawn_time
-}
 
 ]
 }
